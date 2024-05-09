@@ -6,7 +6,8 @@
 MainFrame::MainFrame(const wxString& title)
 	: wxFrame(nullptr, wxID_ANY, title)
 {
-
+	wxButton* button1 = new wxButton(this, wxID_ANY, "Button 1");
+	wxButton* button2 = new wxButton(this, wxID_ANY, "Button 2");
 }
 
 
