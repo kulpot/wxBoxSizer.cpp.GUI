@@ -2,6 +2,18 @@
 #include <wx/wx.h>
 
 //C++ GUI Programming For Beginners | Episode 12 - wxBoxSizer //ref link:https://www.youtube.com/watch?v=b5RtMxMZikg&list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G&index=14
+//----------------SETUP--------------------------------------START---
+
+//Property Manager->
+//Add Existing Property Sheets..->
+//wxWidgets folder->wxwidgets.props->open
+
+//Project Properties->
+//Config: All Config / Platforms : All Platforms :
+//->Linker->System ->
+//SubSystem->Windows(/ SUBSYSTEM:WINDOWS)
+
+//----------------SETUP--------------------------------------END---
 
 MainFrame::MainFrame(const wxString& title)
 	: wxFrame(nullptr, wxID_ANY, title)
@@ -9,10 +21,6 @@ MainFrame::MainFrame(const wxString& title)
 	wxButton* button1 = new wxButton(this, wxID_ANY, "Button 1");
 	wxButton* button2 = new wxButton(this, wxID_ANY, "Button 2");
 }
-
-
-
-
 
 
 
