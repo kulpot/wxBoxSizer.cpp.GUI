@@ -23,8 +23,8 @@ MainFrame::MainFrame(const wxString& title)
 
 	wxBoxSizer* boxSizer = new wxBoxSizer(wxHORIZONTAL);
 
-	boxSizer->Add(button1);
-	boxSizer->Add(button2);
+	boxSizer->Add(button1, 1, wxSHAPED);
+	boxSizer->Add(button2, 0);
 
 	SetSizerAndFit(boxSizer);
 }
