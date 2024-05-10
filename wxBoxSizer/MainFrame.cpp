@@ -22,6 +22,11 @@ MainFrame::MainFrame(const wxString& title)
 	wxButton* button2 = new wxButton(this, wxID_ANY, "Button 2");
 
 	wxBoxSizer* boxSizer = new wxBoxSizer(wxHORIZONTAL);
+
+	boxSizer->Add(button1);
+	boxSizer->Add(button2);
+
+
 }
 
 
