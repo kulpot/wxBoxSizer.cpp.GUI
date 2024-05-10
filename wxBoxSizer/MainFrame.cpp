@@ -26,7 +26,7 @@ MainFrame::MainFrame(const wxString& title)
 	boxSizer->Add(button1);
 	boxSizer->Add(button2);
 
-
+	SetSizerAndFit(boxSizer);
 }
 
 
