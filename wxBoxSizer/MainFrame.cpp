@@ -32,7 +32,8 @@ MainFrame::MainFrame(const wxString& title)
 	//boxSizer->Add(button1, flags);
 	//boxSizer->Add(button2, flags);
 	boxSizer->Add(button1);
-	boxSizer->AddSpacer(20);
+	//boxSizer->AddSpacer(20);
+	boxSizer->AddStretchSpacer();
 	boxSizer->Add(button2);
 
 	SetSizerAndFit(boxSizer);
