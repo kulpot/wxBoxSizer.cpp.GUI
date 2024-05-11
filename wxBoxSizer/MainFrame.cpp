@@ -42,6 +42,10 @@ MainFrame::MainFrame(const wxString& title)
 	choices.Add("No");
 	choices.Add("Yes");
 
+	wxStaticText* staticText = new wxStaticText(this, wxID_ANY, "Please rate this video (from 0-10)");
+	wxSlider* slider = new wxSlider(this, wxID_ANY, 5, 0, 10, wxDefaultPosition, wxSize(200, -1), wxSL_VALUE_LABEL);
+	wxCheckBox* checkBox = new wxCheckBox(this, wxID_ANY, "BoxSizers make sense now");
+
 	wxBoxSizer* boxSizer = new wxBoxSizer(wxVERTICAL);
 
 	SetSizerAndFit(boxSizer);
