@@ -52,9 +52,13 @@ MainFrame::MainFrame(const wxString& title)
 
 	boxSizer->AddStretchSpacer(1);
 	boxSizer->Add(staticText, flags);
+	boxSizer->Add(slider, flags);
+	boxSizer->Add(checkBox, flags);
+	boxSizer->Add(radioBox, flags);
 	boxSizer->AddStretchSpacer(1);
 
 	SetSizerAndFit(boxSizer);
+	SetClientSize(800, 600);
 }
 
 
