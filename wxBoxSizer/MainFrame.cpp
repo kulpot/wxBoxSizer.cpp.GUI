@@ -48,6 +48,11 @@ MainFrame::MainFrame(const wxString& title)
 	wxRadioBox* radioBox = new wxRadioBox(this, wxID_ANY, "Are you subscrebed?", wxDefaultPosition, wxDefaultSize, choices);
 
 	wxBoxSizer* boxSizer = new wxBoxSizer(wxVERTICAL);
+	wxSizerFlags flags = wxSizerFlags().CenterHorizontal().Border(wxALL, 25);
+
+	boxSizer->AddStretchSpacer(1);
+	boxSizer->Add(staticText, flags);
+	boxSizer->AddStretchSpacer(1);
 
 	SetSizerAndFit(boxSizer);
 }
