@@ -22,12 +22,15 @@ MainFrame::MainFrame(const wxString& title)
 	wxButton* button2 = new wxButton(this, wxID_ANY, "Button 2", wxDefaultPosition, wxSize(300, 100));
 
 	wxBoxSizer* boxSizer = new wxBoxSizer(wxHORIZONTAL);
+	wxSizerFlags flags = wxSizerFlags().Proportion(1).CenterVertical().Border(wxALL, 25);
 
 	//boxSizer->Add(button1, 1, wxLEFT | wxRIGHT, 25);
 	//boxSizer->Add(button1, 1, wxALIGN_CENTER | wxLEFT, 25);
-	boxSizer->Add(button1, wxSizerFlags().Proportion(1).CenterVertical().Border(wxALL, 25));
+	//boxSizer->Add(button1, wxSizerFlags().Proportion(1).CenterVertical().Border(wxALL, 25));
 	//boxSizer->Add(button1, 1, wxALL, 25);
-	boxSizer->Add(button2, 0);
+	//boxSizer->Add(button2, 0);
+	boxSizer->Add(button1, flags);
+	boxSizer->Add(button2, flags);
 
 	SetSizerAndFit(boxSizer);
 }
