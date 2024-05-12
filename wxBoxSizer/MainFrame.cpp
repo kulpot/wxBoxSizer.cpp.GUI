@@ -65,6 +65,7 @@ MainFrame::MainFrame(const wxString& title)
 
 	panel->SetSizer(boxSizer);
 	boxSizer->SetSizeHints(this);
+
 	//panel->SetSizerAndFit(boxSizer);
 	//SetSizerAndFit(boxSizer);
 	SetClientSize(800, 600);
