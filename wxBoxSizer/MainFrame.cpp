@@ -63,7 +63,8 @@ MainFrame::MainFrame(const wxString& title)
 	boxSizer->Add(radioBox, flags);
 	boxSizer->AddStretchSpacer(1);
 
-	panel->SetSizerAndFit(boxSizer);
+	panel->SetSizer(boxSizer);
+	//panel->SetSizerAndFit(boxSizer);
 	//SetSizerAndFit(boxSizer);
 	SetClientSize(800, 600);
 }
