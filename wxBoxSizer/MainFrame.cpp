@@ -64,6 +64,7 @@ MainFrame::MainFrame(const wxString& title)
 	boxSizer->AddStretchSpacer(1);
 
 	panel->SetSizer(boxSizer);
+	boxSizer->SetSizeHints(this);
 	//panel->SetSizerAndFit(boxSizer);
 	//SetSizerAndFit(boxSizer);
 	SetClientSize(800, 600);
