@@ -3,6 +3,7 @@
 
 //C++ GUI Programming For Beginners | Episode 12 - wxBoxSizer //ref link:https://www.youtube.com/watch?v=b5RtMxMZikg&list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G&index=14
 //----------------SETUP--------------------------------------START---
+//Create new project->Empty Project(c++/Windows/Console)
 
 //Property Manager->
 //Add Existing Property Sheets..->
