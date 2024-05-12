@@ -45,7 +45,7 @@ MainFrame::MainFrame(const wxString& title)
 	wxStaticText* staticText = new wxStaticText(this, wxID_ANY, "Please rate this video (from 0-10)");
 	wxSlider* slider = new wxSlider(this, wxID_ANY, 5, 0, 10, wxDefaultPosition, wxSize(200, -1), wxSL_VALUE_LABEL);
 	wxCheckBox* checkBox = new wxCheckBox(this, wxID_ANY, "BoxSizers make sense now");
-	wxRadioBox* radioBox = new wxRadioBox(this, wxID_ANY, "Are you subscrebed?", wxDefaultPosition, wxDefaultSize, choices);
+	wxRadioBox* radioBox = new wxRadioBox(this, wxID_ANY, "Are you subscribed?", wxDefaultPosition, wxDefaultSize, choices);
 
 	wxBoxSizer* boxSizer = new wxBoxSizer(wxVERTICAL);
 	wxSizerFlags flags = wxSizerFlags().CenterHorizontal().Border(wxALL, 25);
